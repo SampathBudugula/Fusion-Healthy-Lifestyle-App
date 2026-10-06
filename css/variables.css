@@ -1,0 +1,177 @@
+/* ==========================================================================
+   FUSION — DESIGN SYSTEM TOKENS
+   A Healthy Lifestyle | Premium Design Variables
+   ========================================================================== */
+
+:root {
+
+  /* ---------- BRAND COLORS — "Emerald Professional" ---------- */
+  --color-primary: #1f6b4d;          /* Deep Emerald */
+  --color-primary-light: #2b8563;
+  --color-primary-dark: #123f2d;
+  --color-secondary: #2f9e73;        /* Teal-Green */
+  --color-secondary-light: #4fbb8e;
+  --color-secondary-dark: #1f7d59;
+  --color-accent: #e07a3f;           /* Warm Amber-Orange */
+  --color-accent-light: #f2985f;
+  --color-accent-dark: #b85c26;
+
+  /* ---------- SEMANTIC COLORS ---------- */
+  --color-success: #2f9e73;
+  --color-warning: #e0a83c;
+  --color-danger: #d64545;
+  --color-info: #3f8ee3;
+
+  /* ---------- BACKGROUNDS ---------- */
+  --color-bg: #f7f9f7;               /* Crisp Cool Off-White */
+  --color-bg-alt: #eef4f0;           /* Soft Mint Tint */
+  --color-bg-beige: #eef2ec;         /* Cool Light Sage Neutral */
+  --color-bg-dark: #10201a;
+
+  /* ---------- CARD / SURFACE ---------- */
+  --color-card: #ffffff;
+  --color-card-glass: rgba(255, 255, 255, 0.55);
+  --color-card-glass-strong: rgba(255, 255, 255, 0.75);
+  --color-card-dark-glass: rgba(16, 32, 26, 0.55);
+
+  /* ---------- TEXT ---------- */
+  --color-text: #1c2620;
+  --color-text-muted: #52605a;
+  --color-text-soft: #8b978f;
+  --color-text-inverse: #f7f9f7;
+
+  /* ---------- BORDERS ---------- */
+  --color-border: rgba(31, 107, 77, 0.14);
+  --color-border-light: rgba(255, 255, 255, 0.4);
+  --color-border-strong: rgba(31, 107, 77, 0.35);
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-sm: 0 2px 8px rgba(16, 25, 20, 0.07);
+  --shadow-md: 0 8px 24px rgba(16, 25, 20, 0.10);
+  --shadow-lg: 0 16px 40px rgba(16, 25, 20, 0.14);
+  --shadow-xl: 0 24px 60px rgba(16, 25, 20, 0.18);
+  --shadow-glow-green: 0 0 32px rgba(47, 158, 115, 0.35);
+  --shadow-glow-red: 0 0 32px rgba(224, 122, 63, 0.30);
+  --shadow-glow-berry: 0 0 32px rgba(194, 67, 138, 0.35);
+  --shadow-glow-citrus: 0 0 32px rgba(224, 163, 60, 0.35);
+  --shadow-glow-ocean: 0 0 32px rgba(47, 143, 157, 0.35);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  /* ---------- GRADIENTS ---------- */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-hero: linear-gradient(120deg, #eef4f0 0%, #f7f9f7 45%, #e7f1eb 100%);
+  --gradient-accent: linear-gradient(135deg, #f2985f 0%, #e07a3f 100%);
+  --gradient-green: linear-gradient(135deg, #4fbb8e 0%, #1f7d59 100%);
+  --gradient-warm: linear-gradient(135deg, #f2b76a 0%, #e07a3f 100%);
+  --gradient-footer: linear-gradient(180deg, #10201a 0%, #0a1510 100%);
+  --gradient-radial-glow: radial-gradient(circle at 30% 30%, rgba(47, 158, 115, 0.35), transparent 60%);
+  --gradient-overlay: linear-gradient(180deg, rgba(16,25,20,0) 0%, rgba(16,25,20,0.55) 100%);
+  --gradient-border: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+
+  /* ---------- EXTRA CATEGORY GRADIENTS (unique attractive colorways) ---------- */
+  --gradient-berry: linear-gradient(135deg, #b23e78 0%, #6b1f4f 100%);
+  --gradient-citrus: linear-gradient(135deg, #e0a83c 0%, #c9762a 100%);
+  --gradient-ocean: linear-gradient(135deg, #2f8f9d 0%, #1c5560 100%);
+  --gradient-grape: linear-gradient(135deg, #6d5a9e 0%, #3c2a63 100%);
+  --gradient-mint: linear-gradient(135deg, #3ba589 0%, #1f6d5a 100%);
+  --gradient-cocoa: linear-gradient(135deg, #a9723f 0%, #5a3a1e 100%);
+  --gradient-card-soft: linear-gradient(160deg, #ffffff 0%, #f7f9f7 55%, #eef4f0 100%);
+
+  /* ---------- RADIUS ---------- */
+  --radius-xs: 6px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-full: 999px;
+
+  /* ---------- SPACING SCALE ---------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* ---------- TRANSITIONS ---------- */
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---------- LAYOUT ---------- */
+  --container-max: 1320px;
+  --container-narrow: 860px;
+  --header-height: 84px;
+  --blur-glass: 18px;
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-heading: "Georgia", "Playfair Display", serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+  --fs-4xl: 3.75rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.15;
+  --lh-normal: 1.6;
+  --lh-loose: 1.9;
+
+  /* ---------- Z-INDEX ---------- */
+  --z-navbar: 1000;
+  --z-fixed: 900;
+  --z-overlay: 800;
+  --z-dropdown: 700;
+}
+
+/* ==========================================================================
+   DARK THEME TOKENS (prepared for future JS theme-switcher)
+   Toggled via [data-theme="dark"] on <html> or <body>
+   ========================================================================== */
+:root[data-theme="dark"] {
+  --color-bg: #0e1a15;
+  --color-bg-alt: #142720;
+  --color-bg-beige: #16281f;
+  --color-card: #16281f;
+  --color-card-glass: rgba(20, 39, 32, 0.55);
+  --color-card-glass-strong: rgba(20, 39, 32, 0.78);
+  --color-text: #eef4f0;
+  --color-text-muted: #b9c7bf;
+  --color-text-soft: #8b978f;
+  --color-text-inverse: #101d17;
+  --color-border: rgba(255, 255, 255, 0.10);
+  --color-border-light: rgba(255, 255, 255, 0.14);
+  --color-border-strong: rgba(255, 255, 255, 0.22);
+  --gradient-hero: linear-gradient(120deg, #142720 0%, #0e1a15 45%, #16281f 100%);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.30);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.36);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.42);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.5);
+
+  /* --color-primary-dark / --color-secondary-dark are used everywhere as a
+     TEXT color (headings, eyebrows, tags) meant to read against light
+     surfaces. In dark mode most of those surfaces are now dark, so the
+     brand's literal dark-green shades go near-invisible — brighten them
+     here rather than at each call site. --color-primary / --color-secondary
+     stay untouched since those double as gradient stops that already read
+     fine on dark backgrounds. */
+  --color-primary-dark: #eaf6ef;
+  --color-secondary-dark: #5ecb98;
+
+  /* .product-card is the one component styled with a literal white gradient
+     instead of --color-card — redefine it here too or its heading/text
+     (which correctly read --color-primary-dark/--color-text) end up
+     legible-on-white text painted onto a card that's still white. */
+  --gradient-card-soft: linear-gradient(160deg, #1a3327 0%, #16281f 55%, #122219 100%);
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function () { try { var t = localStorage.getItem("fusion_theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); document.documentElement.setAttribute("data-theme", t); } catch (e) { } })();</script>
+  <title>FUSION | A Healthy Lifestyle — Healthy Food Delivery &amp; Nutrition Tracking</title>
+  <meta name="description"
+    content="FUSION is      a premium healthy food delivery and nutrition tracking platform. Order fresh, wholesome meals, track your macros, and subscribe to weekly nutrition plans.">
+  <meta name="keywords" content="healthy food delivery, nutrition tracking, meal subscription, healthy meals, FUSION">
+  <meta name="author" content="FUSION">
+  <link rel="canonical" href="index.html">
+  <meta property="og:title" content="FUSION | A Healthy Lifestyle">
+  <meta property="og:description" content="Premium healthy food delivery and nutrition tracking platform.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Inline icon sprite — kept in-document so <use> works reliably even over file:// -->
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== -->
+  <div class="promo-bar">
+    <svg class="icon promo-bar__truck" aria-hidden="true">
+      <use href="images/icons/sprite.svg#icon-truck"></use>
+    </svg>
+    <span>Now delivering via <strong>Swiggy</strong> &amp; <strong>Zomato</strong> — order your healthy meal
+      today!</span>
+  </div>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <span class="navbar__brand-mark" aria-hidden="true"><svg class="icon" style="width:22px;height:22px;">
+              <use href="images/icons/sprite.svg#icon-leaf"></use>
+            </svg></span>
+          <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="navbar__toggle-input visually-hidden" aria-hidden="true">
+        <label for="nav-toggle" class="navbar__toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <ul class="navbar__menu" id="primary-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li class="navbar__dropdown">
+            <a href="categories.html">Categories <svg class="icon navbar__dropdown__chevron">
+                <use href="images/icons/sprite.svg#icon-chevron-down"></use>
+              </svg></a>
+            <div class="navbar__dropdown__panel navbar__mega-menu">
+              <div class="navbar__mega-menu__inner">
+                <div class="navbar__dropdown__col">
+                  <h4>Fresh &amp; Light</h4>
+                  <a href="products.html?category=healthy-salads">Healthy Salads</a>
+                  <a href="products.html?category=veg-rice-bowls">Veg Rice Bowls</a>
+                  <a href="products.html?category=non-veg-rice-bowls">Non-Veg Rice Bowls</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Bread &amp; Wraps</h4>
+                  <a href="products.html?category=sandwiches">Sandwiches</a>
+                  <a href="products.html?category=wraps">Wraps</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Sweet &amp; Drinks</h4>
+                  <a href="products.html?category=pancakes">Pancakes</a>
+                  <a href="products.html?category=smoothies">Smoothies</a>
+                  <a href="products.html?category=healthy-cakes">Healthy Cakes</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Meal Plans</h4>
+                  <a href="subscription.html">Weekly Plans</a>
+                  <a href="subscription.html">Monthly Plans</a>
+                </div>
+                <a href="categories.html" class="navbar__dropdown__viewall">View All Categories &rarr;</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="products.html">Meals</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false"
+            aria-label="Switch to dark mode">
+            <svg class="icon icon--moon">
+              <use href="images/icons/sprite.svg#icon-moon"></use>
+            </svg>
+            <svg class="icon icon--sun">
+              <use href="images/icons/sprite.svg#icon-sun"></use>
+            </svg>
+          </button>
+          <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart">
+            <svg class="icon">
+              <use href="images/icons/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="navbar__badge" data-cart-count>0</span>
+          </a>
+          <div class="navbar__dropdown navbar__dropdown--account">
+            <a href="login.html" class="navbar__icon-btn" id="account-icon" aria-label="Account / Login">
+              <svg class="icon">
+                <use href="images/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+            <div class="navbar__dropdown__panel">
+              <a href="login.html"><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-user"></use>
+                </svg> Login</a>
+              <a href="signup.html"><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-user"></use>
+                </svg> Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="navbar__searchrow container" role="search" action="products.html" method="get">
+        <div class="navbar__location">
+          <svg class="icon icon--pin" aria-hidden="true">
+            <use href="images/icons/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <span>Deliver to <strong>Koramangala, Bengaluru</strong></span>
+          <svg class="icon icon--chev" aria-hidden="true">
+            <use href="images/icons/sprite.svg#icon-chevron-down"></use>
+          </svg>
+        </div>
+        <div class="search-box" style="flex:1;">
+          <svg class="icon icon--sm" aria-hidden="true">
+            <use href="images/icons/sprite.svg#icon-search"></use>
+          </svg>
+          <label for="header-search-input" class="visually-hidden">Search meals</label>
+          <input type="search" id="header-search-input" name="q" placeholder="Search for salads, ricebowls, wraps…"
+            autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn--primary">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ==========================================================================
+         HERO BANNER
+         ========================================================================== -->
+    <section class="hero hero--banner hero--home" aria-labelledby="hero-heading"
+      style="background-image:url('images/bannerImg.png');">
+      <h1 id="hero-heading" class="visually-hidden">FUSION — A Healthy Lifestyle. Nutritious meals, balanced nutrition,
+        better you.</h1>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="hero__textcard text-center anim-fade-up">
+          <div class="hero__actions" style="justify-content:center;margin-top:0;">
+            <a href="products.html" class="btn btn--primary btn--lg">Shop Now <svg class="icon icon--sm">
+                <use href="images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg></a>
+            <a href="categories.html" class="btn btn--ghost btn--lg">Explore Menu</a>
+          </div>
+          <div class="hero__stats" style="justify-content:center;">
+            <div class="hero__stat"><strong>250+</strong><span>Healthy Meals</span></div>
+            <div class="hero__stat"><strong>40k+</strong><span>Happy Customers</span></div>
+            <div class="hero__stat"><strong>4.9★</strong><span>Average Rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED CATEGORIES
+         ========================================================================== -->
+    <section class="section--alt" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Browse</p>
+          <h2 id="categories-heading">Featured Categories</h2>
+          <p>Curated healthy collections for every craving and every goal.</p>
+        </div>
+        <div class="grid grid--4 reveal-stagger">
+          <a class="category-card" href="products.html?category=healthy-salads"
+            style="background-image:url('/images/featurescategory/healthysalads.jpg');">
+            <span class="category-card__arrow"><svg class="icon icon--sm">
+                <use href="images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg></span>
+            <span class="category-card__count">32 Items</span>
+            <h3 class="category-card__name">Healthy Salads</h3>
+            <p class="category-card__desc">Crisp greens, superfoods &amp; protein.</p>
+          </a>
+          <a class="category-card" href="products.html?category=veg-rice-bowls"
+            style="background-image:url('/images/featurescategory/vegricebowl.jpg');">
+            <span class="category-card__arrow"><svg class="icon icon--sm">
+                <use href="images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg></span>
+            <span class="category-card__count">28 Items</span>
+            <h3 class="category-card__name">Veg Rice Bowls</h3>
+            <p class="category-card__desc">Wholesome grains &amp; seasonal veggies.</p>
+          </a>
+          <a class="category-card" href="products.html?category=smoothies"
+            style="background-image:url('/images/featurescategory/smoothies.jpg');">
+            <span class="category-card__arrow"><svg class="icon icon--sm">
+                <use href="images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg></span>
+            <span class="category-card__count">18 Items</span>
+            <h3 class="category-card__name">Smoothies</h3>
+            <p class="category-card__desc">Cold-pressed fruit &amp; greens blends.</p>
+          </a>
+          <a class="category-card" href="products.html?category=wraps"
+            style="background-image:url('/images/featurescategory/wraps.jpg');">
+            <span class="category-card__arrow"><svg class="icon icon--sm">
+                <use href="images/icons/sprite.svg#icon-arrow-right"></use>
+              </svg></span>
+            <span class="category-card__count">21 Items</span>
+            <h3 class="category-card__name">Wraps</h3>
+            <p class="category-card__desc">Whole-wheat wraps, guilt-free filling.</p>
+          </a>
+        </div>
+        <div class="text-center mt-lg">
+          <a href="categories.html" class="btn btn--outline">View All Categories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TODAY'S SPECIAL (auto-flip cards — rendered live from the product API)
+         ========================================================================== -->
+    <section aria-labelledby="special-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chef's Pick</p>
+          <h2 id="special-heading">Today&rsquo;s Special</h2>
+          <p>Hand-picked meals that flip to reveal their full nutrition story.</p>
+        </div>
+        <div class="grid grid--4" id="home-special-grid" aria-live="polite">
+          <p class="text-center" style="grid-column:1/-1;">Loading today&rsquo;s specials…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BEST SELLERS (rendered live from the product API)
+         ========================================================================== -->
+    <section class="section--alt" aria-labelledby="bestsellers-heading">
+      <div class="container">
+        <div class="flex flex--between mb-lg reveal" style="flex-wrap:wrap;gap:var(--space-sm);">
+          <div class="section-heading" style="margin:0;text-align:left;">
+            <p class="eyebrow">Loved By Many</p>
+            <h2 id="bestsellers-heading">Best Sellers</h2>
+          </div>
+          <a href="products.html" class="btn btn--outline btn--sm">View All Meals</a>
+        </div>
+        <div class="grid grid--4" id="home-bestsellers-grid" aria-live="polite">
+          <p class="text-center" style="grid-column:1/-1;">Loading best sellers…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NUTRITION BANNER (parallax gradient band)
+         ========================================================================== -->
+    <section aria-labelledby="nutrition-banner-heading" class="parallax-band"
+      style="background-image:var(--gradient-hero);">
+      <div class="container">
+        <div class="card card--gradient-border glass reveal"
+          style="padding:var(--space-lg);display:grid;gap:var(--space-lg);grid-template-columns:1fr;position:relative;overflow:hidden;">
+          <div class="pattern-overlay" aria-hidden="true"></div>
+          <div style="position:relative;z-index:1;" class="hero__grid">
+            <div>
+              <p class="eyebrow">Know What You Eat</p>
+              <h2 id="nutrition-banner-heading">Track Every Macro, Effortlessly</h2>
+              <p>Every FUSION meal comes with a full nutrition breakdown &mdash; protein, carbs, fat, fiber and calories
+                &mdash; so your goals stay on track.</p>
+              <a href="nutrition.html" class="btn btn--primary mt-md">Explore Nutrition Data</a>
+            </div>
+            <div class="nutrition-card">
+              <div class="nutrition-card__macros">
+                <div class="macro"><span class="macro__label"><span>Protein</span><span>65%</span></span>
+                  <div class="macro__bar macro__bar--protein"><span style="width:65%"></span></div>
+                </div>
+                <div class="macro"><span class="macro__label"><span>Carbs</span><span>48%</span></span>
+                  <div class="macro__bar macro__bar--carbs"><span style="width:48%"></span></div>
+                </div>
+                <div class="macro"><span class="macro__label"><span>Fat</span><span>30%</span></span>
+                  <div class="macro__bar macro__bar--fat"><span style="width:30%"></span></div>
+                </div>
+                <div class="macro"><span class="macro__label"><span>Fiber</span><span>72%</span></span>
+                  <div class="macro__bar macro__bar--fiber"><span style="width:72%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SUBSCRIPTION PLANS
+         ========================================================================== -->
+    <section class="section--alt" aria-labelledby="plans-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Save More</p>
+          <h2 id="plans-heading">Subscription Plans</h2>
+          <p>Consistent healthy eating, delivered on autopilot.</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <div class="plan-card">
+            <div class="icon-badge icon-badge--grape icon-badge--sm mb-sm"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-calendar"></use>
+              </svg></div>
+            <h3>Weekly Subscription</h3>
+            <div class="plan-card__tiers">
+              <div class="plan-card__tier"><span>2 Times a Day</span><strong>₹2,249<small>/week</small></strong></div>
+              <div class="plan-card__tier"><span>3 Times a Day</span><strong>₹3,249<small>/week</small></strong></div>
+            </div>
+            <p class="plan-card__permeal">As low as ₹155 per meal</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Free diet plan</li>
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Customizable time schedule</li>
+            </ul>
+            <a href="subscription.html" class="btn btn--outline btn--block">Choose Plan</a>
+          </div>
+          <div class="plan-card plan-card--featured">
+            <span class="plan-card__badge">Suggested</span>
+            <div class="icon-badge icon-badge--glass icon-badge--sm mb-sm"
+              style="background:rgba(255,255,255,0.2);color:#fff;"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-calendar-range"></use>
+              </svg></div>
+            <h3>Monthly Subscription</h3>
+            <div class="plan-card__tiers">
+              <div class="plan-card__tier"><span>2 Times a Day</span><strong>₹8,369<small>/month</small></strong></div>
+              <div class="plan-card__tier plan-card__tier--suggested"><span>3 Times a
+                  Day</span><strong>₹10,499<small>/month</small></strong></div>
+            </div>
+            <p class="plan-card__permeal">As low as ₹130 per meal</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Free nutritionist consultation + diet plan</li>
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Customizable time schedule</li>
+            </ul>
+            <a href="subscription.html" class="btn btn--accent btn--block">Choose Plan</a>
+          </div>
+          <div class="plan-card">
+            <div class="icon-badge icon-badge--mint icon-badge--sm mb-sm"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-diamond"></use>
+              </svg></div>
+            <h3>Diamond Subscription</h3>
+            <p class="plan-card__price">₹13,999 <span>/ month</span></p>
+            <p class="plan-card__permeal">Our most complete monthly experience</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Free nutritionist consultation + diet plan</li>
+              <li><svg class="icon icon--sm">
+                  <use href="images/icons/sprite.svg#icon-check"></use>
+                </svg> Full menu access, all categories</li>
+            </ul>
+            <a href="subscription.html" class="btn btn--outline btn--block">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CUSTOMER REVIEWS
+         ========================================================================== -->
+    <section aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="reviews-heading">Customer Reviews</h2>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <article class="review-card">
+            <svg class="icon icon--lg" style="color:var(--color-border-strong);">
+              <use href="images/icons/sprite.svg#icon-quote"></use>
+            </svg>
+            <span class="rating"><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg></span>
+            <p class="review-card__quote">&ldquo;FUSION completely changed how I eat lunch at work. Fresh, fast and
+              genuinely healthy.&rdquo;</p>
+            <div class="review-card__person">
+              <div class="icon-badge icon-badge--sm icon-badge--glass"><svg class="icon">
+                  <use href="images/icons/sprite.svg#icon-user"></use>
+                </svg></div>
+              <div><strong>Ananya R.</strong><span>Mumbai</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <svg class="icon icon--lg" style="color:var(--color-border-strong);">
+              <use href="images/icons/sprite.svg#icon-quote"></use>
+            </svg>
+            <span class="rating"><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg></span>
+            <p class="review-card__quote">&ldquo;The nutrition tracking is so detailed. I finally understand my
+              macros.&rdquo;</p>
+            <div class="review-card__person">
+              <div class="icon-badge icon-badge--sm icon-badge--glass"><svg class="icon">
+                  <use href="images/icons/sprite.svg#icon-user"></use>
+                </svg></div>
+              <div><strong>Rohan K.</strong><span>Bengaluru</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <svg class="icon icon--lg" style="color:var(--color-border-strong);">
+              <use href="images/icons/sprite.svg#icon-quote"></use>
+            </svg>
+            <span class="rating"><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg><svg class="icon icon--xs icon--filled">
+                <use href="images/icons/sprite.svg#icon-star"></use>
+              </svg></span>
+            <p class="review-card__quote">&ldquo;The monthly subscription is a lifesaver &mdash; consistent, tasty,
+              guilt-free.&rdquo;</p>
+            <div class="review-card__person">
+              <div class="icon-badge icon-badge--sm icon-badge--glass"><svg class="icon">
+                  <use href="images/icons/sprite.svg#icon-user"></use>
+                </svg></div>
+              <div><strong>Meera S.</strong><span>Hyderabad</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HEALTHY TIPS
+         ========================================================================== -->
+    <section class="section--alt" aria-labelledby="tips-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Wellness</p>
+          <h2 id="tips-heading">Healthy Tips</h2>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <article class="card hover-lift" style="padding:var(--space-md);">
+            <div class="icon-badge icon-badge--ocean"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-droplet"></use>
+              </svg></div>
+            <h3 class="mt-sm">Hydrate First</h3>
+            <p>Start your day with a glass of warm water and lemon to kickstart digestion.</p>
+          </article>
+          <article class="card hover-lift" style="padding:var(--space-md);">
+            <div class="icon-badge icon-badge--green"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-rainbow"></use>
+              </svg></div>
+            <h3 class="mt-sm">Eat The Rainbow</h3>
+            <p>A colorful plate usually means a wider range of vitamins and antioxidants.</p>
+          </article>
+          <article class="card hover-lift" style="padding:var(--space-md);">
+            <div class="icon-badge icon-badge--citrus"><svg class="icon">
+                <use href="images/icons/sprite.svg#icon-footprints"></use>
+              </svg></div>
+            <h3 class="mt-sm">Move After Meals</h3>
+            <p>A short 10-minute walk after eating helps regulate blood sugar levels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NEWSLETTER
+         ========================================================================== -->
+    <section aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter bg-gradient-animated reveal--zoom reveal">
+          <div class="organic-shape organic-shape--blob-1" aria-hidden="true"></div>
+          <h2 id="newsletter-heading">Get Healthy Recipes In Your Inbox</h2>
+          <p>Join 40,000+ subscribers receiving weekly nutrition tips &amp; exclusive offers.</p>
+          <form class="newsletter-form" id="newsletter-form" action="#" method="post">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required
+              autocomplete="email">
+            <button type="submit" class="btn btn--accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INSTAGRAM GALLERY
+         ========================================================================== -->
+    <!-- <section class="section--tight" aria-labelledby="insta-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">@fusion.healthy</p>
+          <h2 id="insta-heading">Instagram Gallery</h2>
+        </div>
+        <div class="insta-grid reveal-stagger">
+          <a href="#" class="icon-banner icon-banner--square icon-banner--primary" aria-label="Instagram post 1"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" class="icon-banner icon-banner--square icon-banner--green" aria-label="Instagram post 2"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" class="icon-banner icon-banner--square icon-banner--berry" aria-label="Instagram post 3"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" class="icon-banner icon-banner--square icon-banner--citrus" aria-label="Instagram post 4"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" class="icon-banner icon-banner--square icon-banner--ocean" aria-label="Instagram post 5"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" class="icon-banner icon-banner--square icon-banner--grape" aria-label="Instagram post 6"><svg class="icon"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="footer__brand-mark" aria-hidden="true"><svg class="icon" style="color:#fff;">
+            <use href="images/icons/sprite.svg#icon-leaf"></use>
+          </svg></span>
+        <h4>FUSION</h4>
+        <p>Premium healthy food delivery and nutrition tracking, crafted for a balanced lifestyle.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="FUSION Health Cafe on Instagram (@fusionhealthcafe)"><svg class="icon icon--sm">
+              <use href="images/icons/sprite.svg#icon-instagram"></use>
+            </svg></a>
+          <a href="#" aria-label="FUSION Health Cafe on Facebook (fusion_health_cafe)"><svg class="icon icon--sm">
+              <use href="images/icons/sprite.svg#icon-facebook"></use>
+            </svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Fusion</a></li>
+          <li><a href="about.html#journal">Blog</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="profile.html">My Account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Healthy Categories</h4>
+        <ul class="footer__links">
+          <li><a href="categories.html">Salads</a></li>
+          <li><a href="categories.html">Rice Bowls</a></li>
+          <li><a href="categories.html">Smoothies</a></li>
+          <li><a href="categories.html">Wraps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <p><svg class="icon icon--sm">
+            <use href="images/icons/sprite.svg#icon-clock"></use>
+          </svg> Mon &ndash; Sun, 7am &ndash; 11pm</p>
+        <p><svg class="icon icon--sm">
+            <use href="images/icons/sprite.svg#icon-phone"></use>
+          </svg> +91 98765 43210</p>
+        <p><svg class="icon icon--sm">
+            <use href="images/icons/sprite.svg#icon-envelope"></use>
+          </svg> support@fusion.health</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 FUSION. All rights reserved.</p>
+      <p>Designed with <svg class="icon icon--xs" style="color:var(--color-secondary);">
+          <use href="images/icons/sprite.svg#icon-leaf"></use>
+        </svg> for a healthier tomorrow.</p>
+    </div>
+  </footer>
+
+  <a href="#main" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* ==========================================================================
+   FUSION — RESPONSIVE
+   Mobile-first breakpoints: 320 / 375 / 425 / 768 / 1024 / 1440 / 1920
+   ========================================================================== */
+
+/* ---------- 375px : large phones ---------- */
+@media (min-width: 375px) {
+  .hero__stats { justify-content: flex-start; }
+}
+
+/* ---------- 425px : small tablets / phablets ---------- */
+@media (min-width: 425px) {
+  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .newsletter-form input { min-width: 240px; }
+}
+
+/* ---------- 768px : tablets — navbar becomes horizontal ---------- */
+@media (min-width: 768px) {
+  .navbar__toggle { display: none; }
+  .navbar__menu { display: flex; order: 2; }
+  .navbar__actions { order: 3; }
+  .navbar__searchrow { display: flex; }
+  :root { --header-height: 148px; }
+
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+  .hero__grid { grid-template-columns: 1.1fr 0.9fr; }
+
+  .footer__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .stats-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .gallery {
+    grid-template-columns: 1fr 110px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "frame thumb1"
+      "frame thumb2";
+  }
+  .gallery.gallery--icon-only {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "frame";
+  }
+
+  .cart-item { grid-template-columns: 110px 1fr auto; }
+
+  section { padding-block: var(--space-2xl); }
+}
+
+/* ---------- 1024px : small laptops ---------- */
+@media (min-width: 1024px) {
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--4 { grid-template-columns: repeat(3, 1fr); }
+
+  .footer__grid { grid-template-columns: 2fr 1fr 1fr 1.4fr; }
+
+  .cart-page-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+
+  .singlepage-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .profile-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+
+  .about-grid-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- 1440px : desktops ---------- */
+@media (min-width: 1440px) {
+  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+  .hero__content h1 { font-size: var(--fs-4xl); }
+
+  .container { padding-inline: var(--space-lg); }
+}
+
+/* ---------- 1920px : large desktops ---------- */
+@media (min-width: 1920px) {
+  .container { max-width: 1520px; }
+
+  .carousel-3d { max-width: 380px; height: 480px; }
+}
+
+/* ---------- Mega-menu / account dropdown: desktop-hover only ---------- */
+@media (max-width: 767px) {
+  .navbar__dropdown__panel { display: none !important; }
+}
+
+/* ---------- Fine-grained small phone tune (max-width: 374px) ---------- */
+@media (max-width: 374px) {
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .navbar__brand-tagline { display: none; }
+  .plan-card--featured { transform: none; }
+}
+
+/* ---------- Print (bonus accessibility touch) ---------- */
+@media print {
+  .navbar, .footer, .fixed-cta, .back-to-top { display: none !important; }
+}

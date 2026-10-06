@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem("fusion_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <title>Nutrition | FUSION — A Healthy Lifestyle</title>
+  <meta name="description" content="Explore full nutrition breakdowns for every FUSION meal — protein, carbs, fat, fiber, sugar and calories, with search, filter and sort tools.">
+  <link rel="canonical" href="nutrition.html">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="promo-bar">
+    <svg class="icon promo-bar__truck" aria-hidden="true"><use href="images/icons/sprite.svg#icon-truck"></use></svg>
+    <span>Now delivering via <strong>Swiggy</strong> &amp; <strong>Zomato</strong> — order your healthy meal today!</span>
+  </div>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <span class="navbar__brand-mark" aria-hidden="true"><svg class="icon" style="width:22px;height:22px;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+          <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="navbar__toggle-input visually-hidden" aria-hidden="true">
+        <label for="nav-toggle" class="navbar__toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+        <ul class="navbar__menu" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="navbar__dropdown">
+            <a href="categories.html">Categories <svg class="icon navbar__dropdown__chevron"><use href="images/icons/sprite.svg#icon-chevron-down"></use></svg></a>
+            <div class="navbar__dropdown__panel navbar__mega-menu">
+              <div class="navbar__mega-menu__inner">
+                <div class="navbar__dropdown__col">
+                  <h4>Fresh &amp; Light</h4>
+                  <a href="products.html?category=healthy-salads">Healthy Salads</a>
+                  <a href="products.html?category=veg-rice-bowls">Veg Rice Bowls</a>
+                  <a href="products.html?category=non-veg-rice-bowls">Non-Veg Rice Bowls</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Bread &amp; Wraps</h4>
+                  <a href="products.html?category=sandwiches">Sandwiches</a>
+                  <a href="products.html?category=wraps">Wraps</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Sweet &amp; Drinks</h4>
+                  <a href="products.html?category=pancakes">Pancakes</a>
+                  <a href="products.html?category=smoothies">Smoothies</a>
+                  <a href="products.html?category=healthy-cakes">Healthy Cakes</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Meal Plans</h4>
+                  <a href="subscription.html">Weekly Plans</a>
+                  <a href="subscription.html">Monthly Plans</a>
+                </div>
+                <a href="categories.html" class="navbar__dropdown__viewall">View All Categories &rarr;</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="products.html">Meals</a></li>
+          <li><a href="nutrition.html" aria-current="page">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><svg class="icon icon--moon"><use href="images/icons/sprite.svg#icon-moon"></use></svg><svg class="icon icon--sun"><use href="images/icons/sprite.svg#icon-sun"></use></svg></button>
+          <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart"><svg class="icon"><use href="images/icons/sprite.svg#icon-cart"></use></svg><span class="navbar__badge" data-cart-count>0</span></a>
+          <div class="navbar__dropdown navbar__dropdown--account">
+            <a href="login.html" class="navbar__icon-btn" id="account-icon" aria-label="Account / Login"><svg class="icon"><use href="images/icons/sprite.svg#icon-user"></use></svg></a>
+            <div class="navbar__dropdown__panel">
+              <a href="login.html"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-user"></use></svg> Login</a>
+              <a href="signup.html"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-user"></use></svg> Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--banner section--tight" aria-labelledby="page-heading" style="background-image:url('images/nutritionbanner.jpg');">
+      <div class="container anim-fade-up" style="position:relative;z-index:1;">
+        <div class="hero__textcard text-center">
+          <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content:center;">
+            <a href="index.html">Home</a><span>/</span><span aria-current="page">Nutrition</span>
+          </nav>
+          <p class="eyebrow">Know Your Macros</p>
+          <h1 id="page-heading">Nutrition Explorer</h1>
+          <p style="max-width:60ch;margin-inline:auto;">Search, filter and sort every meal by protein, calories, or price to match your exact goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Nutrition filters and listing">
+      <div class="container">
+
+        <form class="toolbar" id="nutrition-toolbar" role="search" action="#" method="get">
+          <div class="search-box">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="images/icons/sprite.svg#icon-search"></use></svg>
+            <label for="nutrition-search" class="visually-hidden">Search by food name</label>
+            <input type="search" id="nutrition-search" name="q" placeholder="Search foods…" autocomplete="off">
+          </div>
+          <div class="filter-group" id="nutrition-category-filter" role="group" aria-label="Filter by category">
+            <button type="button" class="filter-chip" aria-pressed="true" data-filter="all">All</button>
+            <button type="button" class="filter-chip" data-filter="healthy-salads">Salads</button>
+            <button type="button" class="filter-chip" data-filter="veg-rice-bowls">Bowls</button>
+            <button type="button" class="filter-chip" data-filter="smoothies">Smoothies</button>
+          </div>
+          <label for="nutrition-sort" class="visually-hidden">Sort by</label>
+          <select id="nutrition-sort" name="sort" class="select-box">
+            <option value="default">Sort By</option>
+            <option value="protein">Protein (High to Low)</option>
+            <option value="calories">Calories (Low to High)</option>
+            <option value="price-low">Price</option>
+          </select>
+        </form>
+
+        <div class="grid grid--4" id="nutrition-grid" aria-live="polite">
+          <p class="text-center" style="grid-column:1/-1;">Loading nutrition data…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="footer__brand-mark" aria-hidden="true"><svg class="icon" style="color:#fff;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+        <h4>FUSION</h4>
+        <p>Premium healthy food delivery and nutrition tracking, crafted for a balanced lifestyle.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="FUSION on Instagram"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" aria-label="FUSION on Facebook"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-facebook"></use></svg></a>
+          <a href="#" aria-label="FUSION on Twitter"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-twitter"></use></svg></a>
+          <a href="#" aria-label="FUSION on YouTube"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-youtube"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Fusion</a></li>
+          <li><a href="about.html#journal">Blog</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="profile.html">My Account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Healthy Categories</h4>
+        <ul class="footer__links">
+          <li><a href="categories.html">Salads</a></li>
+          <li><a href="categories.html">Rice Bowls</a></li>
+          <li><a href="categories.html">Smoothies</a></li>
+          <li><a href="categories.html">Wraps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-clock"></use></svg> Mon &ndash; Sun, 7am &ndash; 11pm</p>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-phone"></use></svg> +91 98765 43210</p>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-envelope"></use></svg> support@fusion.health</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 FUSION. All rights reserved.</p>
+      <p>Designed with <svg class="icon icon--xs" style="color:var(--color-secondary);"><use href="images/icons/sprite.svg#icon-leaf"></use></svg> for a healthier tomorrow.</p>
+    </div>
+  </footer>
+
+  <a href="#main" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

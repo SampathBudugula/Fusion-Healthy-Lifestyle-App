@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem("fusion_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <title>Subscription Plans | FUSION — A Healthy Lifestyle</title>
+  <meta name="description" content="Compare FUSION's Weekly, Monthly and Diamond subscription plans — healthy meals, nutrition support and diet consultation included.">
+  <link rel="canonical" href="subscription.html">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="promo-bar">
+    <svg class="icon promo-bar__truck" aria-hidden="true"><use href="images/icons/sprite.svg#icon-truck"></use></svg>
+    <span>Now delivering via <strong>Swiggy</strong> &amp; <strong>Zomato</strong> — order your healthy meal today!</span>
+  </div>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <span class="navbar__brand-mark" aria-hidden="true"><svg class="icon" style="width:22px;height:22px;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+          <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="navbar__toggle-input visually-hidden" aria-hidden="true">
+        <label for="nav-toggle" class="navbar__toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+        <ul class="navbar__menu" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="navbar__dropdown">
+            <a href="categories.html">Categories <svg class="icon navbar__dropdown__chevron"><use href="images/icons/sprite.svg#icon-chevron-down"></use></svg></a>
+            <div class="navbar__dropdown__panel navbar__mega-menu">
+              <div class="navbar__mega-menu__inner">
+                <div class="navbar__dropdown__col">
+                  <h4>Fresh &amp; Light</h4>
+                  <a href="products.html?category=healthy-salads">Healthy Salads</a>
+                  <a href="products.html?category=veg-rice-bowls">Veg Rice Bowls</a>
+                  <a href="products.html?category=non-veg-rice-bowls">Non-Veg Rice Bowls</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Bread &amp; Wraps</h4>
+                  <a href="products.html?category=sandwiches">Sandwiches</a>
+                  <a href="products.html?category=wraps">Wraps</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Sweet &amp; Drinks</h4>
+                  <a href="products.html?category=pancakes">Pancakes</a>
+                  <a href="products.html?category=smoothies">Smoothies</a>
+                  <a href="products.html?category=healthy-cakes">Healthy Cakes</a>
+                </div>
+                <div class="navbar__dropdown__col">
+                  <h4>Meal Plans</h4>
+                  <a href="subscription.html">Weekly Plans</a>
+                  <a href="subscription.html">Monthly Plans</a>
+                </div>
+                <a href="categories.html" class="navbar__dropdown__viewall">View All Categories &rarr;</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="products.html">Meals</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="subscription.html" aria-current="page">Subscription</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><svg class="icon icon--moon"><use href="images/icons/sprite.svg#icon-moon"></use></svg><svg class="icon icon--sun"><use href="images/icons/sprite.svg#icon-sun"></use></svg></button>
+          <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart"><svg class="icon"><use href="images/icons/sprite.svg#icon-cart"></use></svg><span class="navbar__badge" data-cart-count>0</span></a>
+          <div class="navbar__dropdown navbar__dropdown--account">
+            <a href="login.html" class="navbar__icon-btn" id="account-icon" aria-label="Account / Login"><svg class="icon"><use href="images/icons/sprite.svg#icon-user"></use></svg></a>
+            <div class="navbar__dropdown__panel">
+              <a href="login.html"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-user"></use></svg> Login</a>
+              <a href="signup.html"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-user"></use></svg> Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--banner section--tight" aria-labelledby="page-heading" style="background-image:url('images/subscriptionbanner.png');">
+      <div class="container anim-fade-up" style="position:relative;z-index:1;">
+        <div class="hero__textcard hero__textcard--left">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span>/</span><span aria-current="page">Subscription</span>
+          </nav>
+          <p class="eyebrow">Consistency Made Easy</p>
+          <h1 id="page-heading">Subscription Plans</h1>
+          <p style="max-width:42ch;">Healthy eating on autopilot — pick the plan that fits your lifestyle and goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Subscription plan options">
+      <div class="container">
+        <div class="grid grid--3 reveal-stagger" id="plan-grid">
+
+          <div class="plan-card" data-plan="weekly">
+            <div class="icon-badge icon-badge--grape mb-sm"><svg class="icon"><use href="images/icons/sprite.svg#icon-calendar"></use></svg></div>
+            <h3>Weekly Subscription</h3>
+            <div class="plan-card__tiers">
+              <div class="plan-card__tier"><span>2 Times a Day</span><strong>₹2,249<small>/week</small></strong></div>
+              <div class="plan-card__tier"><span>3 Times a Day</span><strong>₹3,249<small>/week</small></strong></div>
+            </div>
+            <p class="plan-card__permeal">As low as ₹155 per meal</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Free diet plan for your requirements</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Fully customizable time schedule</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Salads, ricebowls, sandwiches, wraps, pancakes, smoothies &amp; healthy desserts</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--block" data-action="choose-plan" data-plan-id="weekly">Choose Plan</button>
+          </div>
+
+          <div class="plan-card plan-card--featured" data-plan="monthly">
+            <span class="plan-card__badge">Suggested</span>
+            <div class="icon-badge icon-badge--glass mb-sm" style="background:rgba(255,255,255,0.2);color:#fff;"><svg class="icon"><use href="images/icons/sprite.svg#icon-calendar-range"></use></svg></div>
+            <h3>Monthly Subscription</h3>
+            <div class="plan-card__tiers">
+              <div class="plan-card__tier"><span>2 Times a Day</span><strong>₹8,369<small>/month</small></strong></div>
+              <div class="plan-card__tier plan-card__tier--suggested"><span>3 Times a Day</span><strong>₹10,499<small>/month</small></strong></div>
+            </div>
+            <p class="plan-card__permeal">As low as ₹130 per meal</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Free nutritionist consultation + diet plan</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Fully customizable time schedule</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Salads, ricebowls, stuffed parathas, ice creams, sandwiches, wraps, pancakes, smoothies &amp; healthy desserts</li>
+            </ul>
+            <button type="button" class="btn btn--accent btn--block" data-action="choose-plan" data-plan-id="monthly">Choose Plan</button>
+          </div>
+
+          <div class="plan-card" data-plan="diamond">
+            <div class="icon-badge icon-badge--mint mb-sm"><svg class="icon"><use href="images/icons/sprite.svg#icon-diamond"></use></svg></div>
+            <h3>Diamond Subscription</h3>
+            <p class="plan-card__price">₹13,999 <span>/ month</span></p>
+            <p class="plan-card__permeal">Our most complete monthly experience</p>
+            <ul class="plan-card__features">
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Free nutritionist consultation + diet plan</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Fully customizable time schedule</li>
+              <li><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-check"></use></svg> Full menu access — including stuffed parathas &amp; ice creams</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--block" data-action="choose-plan" data-plan-id="diamond">Choose Plan</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section--alt" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Compare</p>
+          <h2 id="compare-heading">Plan Comparison</h2>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="compare-table">
+            <caption class="visually-hidden">Comparison of Weekly, Monthly and Diamond subscription plans</caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Weekly</th>
+                <th scope="col">Monthly</th>
+                <th scope="col">Diamond</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2 Times a Day</td>
+                <td>₹2,249/week (₹160/meal)</td>
+                <td>₹8,369/month (₹150/meal)</td>
+                <td rowspan="2">₹13,999/month flat</td>
+              </tr>
+              <tr>
+                <td>3 Times a Day</td>
+                <td>₹3,249/week (₹155/meal)</td>
+                <td>₹10,499/month (₹130/meal) — Suggested</td>
+              </tr>
+              <tr>
+                <td>Diet Plan</td>
+                <td>Free, per your requirements</td>
+                <td>Free nutritionist consultation + diet plan</td>
+                <td>Free nutritionist consultation + diet plan</td>
+              </tr>
+              <tr>
+                <td>Time Schedule</td>
+                <td>Fully customizable</td>
+                <td>Fully customizable</td>
+                <td>Fully customizable</td>
+              </tr>
+              <tr>
+                <td>Menu Access</td>
+                <td>Salads, ricebowls, sandwiches, wraps, pancakes, smoothies, healthy desserts</td>
+                <td>+ Stuffed parathas &amp; ice creams</td>
+                <td>Full menu, all categories</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="footer__brand-mark" aria-hidden="true"><svg class="icon" style="color:#fff;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+        <h4>FUSION</h4>
+        <p>Premium healthy food delivery and nutrition tracking, crafted for a balanced lifestyle.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="FUSION on Instagram"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="#" aria-label="FUSION on Facebook"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-facebook"></use></svg></a>
+          <a href="#" aria-label="FUSION on Twitter"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-twitter"></use></svg></a>
+          <a href="#" aria-label="FUSION on YouTube"><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-youtube"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Fusion</a></li>
+          <li><a href="about.html#journal">Blog</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="profile.html">My Account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Healthy Categories</h4>
+        <ul class="footer__links">
+          <li><a href="categories.html">Salads</a></li>
+          <li><a href="categories.html">Rice Bowls</a></li>
+          <li><a href="categories.html">Smoothies</a></li>
+          <li><a href="categories.html">Wraps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-clock"></use></svg> Mon &ndash; Sun, 7am &ndash; 11pm</p>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-phone"></use></svg> +91 98765 43210</p>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-envelope"></use></svg> support@fusion.health</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 FUSION. All rights reserved.</p>
+      <p>Designed with <svg class="icon icon--xs" style="color:var(--color-secondary);"><use href="images/icons/sprite.svg#icon-leaf"></use></svg> for a healthier tomorrow.</p>
+    </div>
+  </footer>
+
+  <a href="#main" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

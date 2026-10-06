@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem("fusion_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <title>Meal Details | FUSION</title>
+  <meta name="description" content="Healthy meal details and nutrition information from FUSION.">
+  <link rel="canonical" href="singlepage.html">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="promo-bar">
+    <svg class="icon promo-bar__truck" aria-hidden="true"><use href="images/icons/sprite.svg#icon-truck"></use></svg>
+    <span>Now delivering via <strong>Swiggy</strong> &amp; <strong>Zomato</strong> — order your healthy meal today!</span>
+  </div>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <span class="navbar__brand-mark" aria-hidden="true"><svg class="icon" style="width:22px;height:22px;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+          <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+        </a>
+        <div class="navbar__actions">
+          <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><svg class="icon icon--moon"><use href="images/icons/sprite.svg#icon-moon"></use></svg><svg class="icon icon--sun"><use href="images/icons/sprite.svg#icon-sun"></use></svg></button>
+          <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart"><svg class="icon"><use href="images/icons/sprite.svg#icon-cart"></use></svg><span class="navbar__badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="singlepage-layout">
+    <section class="container" aria-labelledby="product-title">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><a href="products.html">Meals</a><span>/</span><span id="breadcrumb-current">Meal</span>
+      </nav>
+
+      <div class="singlepage-layout__content" id="product-info">
+        <div class="gallery" id="product-gallery">
+          <div class="gallery__frame icon-banner" id="gallery-main-frame">
+            <svg class="icon icon--xl" id="gallery-icon-main" aria-hidden="true"><use href="images/icons/sprite.svg#icon-salad"></use></svg>
+          </div>
+          <div class="gallery__thumbs">
+            <button type="button" class="gallery__thumb is-active" id="gallery-thumb-1" aria-label="View first meal photo" hidden></button>
+            <button type="button" class="gallery__thumb" id="gallery-thumb-2" aria-label="View second meal photo" hidden></button>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <span class="product-card__category" id="product-category-label">Healthy Meal</span>
+          <h1 id="product-title">Meal details</h1>
+          <div class="product-card__meta" id="product-rating"></div>
+          <p id="product-description"></p>
+
+          <div class="product-detail__purchase">
+            <div class="product-card__price" id="product-price">₹0</div>
+            <div class="product-detail__actions">
+              <button type="button" class="btn btn--primary" data-action="add-to-cart" id="main-add-to-cart-btn">Add To Cart</button>
+              <button type="button" class="btn btn--ghost" data-action="buy-now">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-detail__info-row">
+            <span id="product-delivery"></span>
+            <button type="button" class="btn btn--ghost btn--sm" id="product-wishlist-btn" data-action="toggle-favorite" aria-label="Add to wishlist" aria-pressed="false">Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Nutrition and ingredients tabs">
+      <div class="tabs" role="tablist" aria-label="Product details">
+        <button type="button" class="tab is-active" role="tab" aria-selected="true" data-tab="ingredients">Ingredients</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-tab="preparation">Preparation</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-tab="benefits">Benefits</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-tab="serving">Serving</button>
+      </div>
+
+      <div class="tab-panel is-visible" id="tab-ingredients"></div>
+      <div class="tab-panel" id="tab-preparation"></div>
+      <div class="tab-panel" id="tab-benefits"></div>
+      <div class="tab-panel" id="tab-serving"></div>
+    </section>
+
+    <section class="container" aria-labelledby="nutrition-summary-heading">
+      <h2 id="nutrition-summary-heading">Nutrition Summary</h2>
+      <div id="nutrition-summary-macros" class="nutrition-card__macros"></div>
+    </section>
+
+    <section class="container" aria-labelledby="related-heading">
+      <div class="section-heading">
+        <p class="eyebrow">You may also like</p>
+        <h2 id="related-heading">Related Meals</h2>
+      </div>
+      <div class="grid grid--4" id="related-meals-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="footer__brand-mark" aria-hidden="true"><svg class="icon" style="color:#fff;"><use href="images/icons/sprite.svg#icon-leaf"></use></svg></span>
+        <h4>FUSION</h4>
+        <p>Premium healthy food delivery and nutrition tracking, crafted for a balanced lifestyle.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Fusion</a></li>
+          <li><a href="products.html">Meals</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-clock"></use></svg> Mon &ndash; Sun, 7am &ndash; 11pm</p>
+        <p><svg class="icon icon--sm"><use href="images/icons/sprite.svg#icon-phone"></use></svg> +91 98765 43210</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
